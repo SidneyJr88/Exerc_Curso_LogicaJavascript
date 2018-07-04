@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Logica de Programação Javascript</title>
+	</head>
+	<body>
+		<h1>Lógica de Programação Javascript: Aula</h1>
+		<h2>Mostrar a soma dos números pares contido no Array(2, 1, 25, 30, 45, 28, 7, 12, 78, 64)</h2>
+
+		<script type="text/javascript">
+			
+			var pares = new Array(2, 1, 25, 30, 45, 28, 7, 12, 78, 64);
+			var total = 0;
+
+			for (var i = 0; i < pares.length; i++) {
+				
+				if (pares[i]%2 == 0) {
+					total += pares[i];
+				}
+			}
+
+			alert("total é " +total);
+
+		</script>
+	</body>
+</html>
