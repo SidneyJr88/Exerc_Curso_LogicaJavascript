@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Logica de Programação Javascript</title>
+	</head>
+	<body>
+		<h1>Lógica de Programação Javascript: Aula 04.1</h1>
+		<h3>Função: Utilizando botão em html para ativar função<h3>
+		<ol>
+			<li>Úsuario clica no botão "Tabuada";</li>
+			<li>Caixa de alerta pedi a inserção de um número;</li>
+			<li>Úsuario insere um nÚmero e é mostrada a tabuada até 10;</li>
+			<li>Botão "Limpar" apaga todas a tabuadas da tela</li>
+		</ol>
+
+		<button onclick="mostrarTabuada()">Tabuada</button>
+		<button onclick="limpar()">Limpar</button>
+
+		<div id="saida"></div>
+
+		<script type="text/javascript">
+
+			var saida = document.querySelector("#saida");
+			var mensagem = " ";
+			
+			function mostrarTabuada(){
+
+				var num = parseInt(prompt("Insira um número"));
+				var i = 0;
+
+				while(i<=10){
+					mensagem += num+" x "+i+" = "+num*i+"<br>";
+					i++;
+				}
+				saida.innerHTML = mensagem;
+			}
+
+			function limpar(){
+				mensagem = " ";
+				saida.innerHTML = mensagem;
+			}
+
+		</script>
+	</body>
+</html>
