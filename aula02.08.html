@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Logica de Programação Javascript</title>
+	</head>
+	<body>
+		<h1>Lógica de Programação Javascript: Aula 2.8</h1>
+		<h3>Operadores Lógicos</h3>
+		<ol>
+			<li>! Não (Not)</li>
+			<li>&& E (and)</li>
+			<li>|| Ou (Or)</li>
+		</ol>
+		<h3>Problema</h3>
+		<ol>
+			<li>Usuário digita duas notas;</li>
+			<li>Se uma das notas for igual a zero, aluno reprova;</li>
+			<li>Mostrar mensagem "reprovado";</li>
+			<li>Se a média for maior que 5 mostrar mensagem "aprovado".</li>
+		</ol>
+		<script type="text/javascript">
+		
+			var nota1 = parseInt(prompt("Digita a primeira nota"));
+			var nota2 = parseInt(prompt("Digite a segunda nota"));
+
+			if (nota1==0 || nota2==0) {
+				alert("Reprovado");
+			}
+			else{
+				var media = (nota1+nota2)/2
+				if (media>5) {
+					alert("Aprovado com média: "+media);
+				}
+				else{
+					alert("Reprovado com média: "+media);
+				}
+			}
+		</script>
+	</body>
+</html>
