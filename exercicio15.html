@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Logica de Programação Javascript</title>
+	</head>
+	<body>
+		<h1>Lógica de Programação Javascript: Exerc 15</h1>
+		<ol>
+			<li>Criar um Array com 3 objetos</li>
+			<li>Propriedades : Nome e email</li>
+			<li>Mostrar na tela usando div</li>
+		</ol>
+		<div id="saida"></div>
+		<script type="text/javascript">
+			//Cria 1 array contato, com 3 Objetos
+			var contato = [
+				{"nome": "Sidney", "email":"Sidney@email.com"}, 
+				{"nome":"Lary","email":"Lary@email.com"}, 
+				{"nome":"Fulano", "email":"Fulano@email.com"}
+				];
+			
+			var escreve = "";
+
+			for (var i = 0; i < contato.length; i++) {
+
+					escreve+= "<h2>Contato: "+contato[i].nome+ "</h2>";
+					escreve+= "<p>Email: "+contato[i].email+ "</p>";
+				
+				}
+
+				document.querySelector("#saida").innerHTML = escreve;
+
+		</script>
+	</body>
+</html>
