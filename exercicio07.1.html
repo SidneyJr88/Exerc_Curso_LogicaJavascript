@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Logica de Programação Javascript</title>
+	</head>
+	<body>
+		<h1>Lógica de Programação Javascript: Exerc 07.1</h1>
+		<h3>Laço de Repetições: While</h3>
+		<ol>
+			<li>Mostrar anos bissextos de 0 até 2018.</li>
+		</ol>
+		<script type="text/javascript">
+
+			var ano = 0;
+
+			while(ano<=2018)
+			{
+
+				if ((ano%4 == 0 && ano%400 == 0) || ano%100 !== 0) 
+					{
+					document.write("O ano de "+ano+" é bissexto<br>");
+					}
+
+				ano+=4;
+			}
+			document.write("Fim");
+
+		</script>
+	</body>
+</html>
