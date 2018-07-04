@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Logica de Programação Javascript</title>
+	</head>
+	<body>
+		<h1>Lógica de Programação Javascript: Exerc 04</h1>
+		<ol>
+			<li>Jogador 1 digita um numero;</li>
+			<li>Jogador 2 digita um numero;</li>
+			<li>Numeros iguais mostrar mensagem : "Empate!";</li>
+			<li>Sortea numero entre 0 e 1;</li>
+			<li>Numero sorteado igual a 0, ganha quem escolheu o menor numero;</li>
+			<li>Número sorteado igual a 1, ganha quem escolheu o maior número.</li>
+
+			<script type="text/javascript">
+				
+				var jgd1 = parseFloat(prompt("Jogador 1, insira um numero"));
+				var jgd2 = parseFloat(prompt("Jogador 2, insira um numero"));
+				var sort = Math.floor(Math.random()*2);
+
+				if (jgd1==jgd2) {
+					alert("Empate");
+				}
+
+				else{
+					alert(sort);
+					
+					switch(sort){
+
+						case 0 :
+							if (jgd1<jgd2) {
+								alert("Jogador 1 ganhou com o menor número!");
+							}
+							else{
+								alert("Jogador 2 ganhou com o menor número!");
+							}
+						break;
+						case 1 :
+							if (jgd1>jgd2) {
+								alert("Jogador 1 ganhou com o maior número!");
+							}
+							else{
+								alert("Jogador 2 ganhou com o maior número!");
+							}
+						break;						
+					}
+				}
+
+			</script> 
+		</ol>
+	</body>
+</html>
