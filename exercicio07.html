@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Logica de Programação Javascript</title>
+	</head>
+	<body>
+		<h1>Lógica de Programação Javascript: Exerc 07</h1>
+		<h3>Laço de decisão: If</h3>
+		<ol>
+			<li>Mostrar se o número é bissexto ou não.</li>
+		</ol>
+		<script type="text/javascript">
+
+			var ano = parseInt(prompt("Insira um ano "));
+
+			if(ano%4 == 0)
+				{
+
+				if(ano%400 == 0)
+					{
+					document.write("O ano de "+ano+" é bissexto");
+					}
+
+				else if(ano%100 !== 0)
+					{
+					document.write("O ano de "+ano+" é bissexto");
+					}
+
+				else 
+					{
+					document.write("O ano de "+ano+" não é bissexto");
+					}
+				}
+
+			else
+				{
+				document.write("O ano de "+ano+" não é bissexto");
+				}
+
+		</script>
+	</body>
+</html>
