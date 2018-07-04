@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Logica de Programação Javascript</title>
+	</head>
+	<body>
+		<h1>Lógica de Programação Javascript: Aula 2.6 </h1>
+
+		<p>Pedir para o usuário digitar dois números e mostrar um boolean True(verdadeiro) ou False (falso) indicando se a média for maior que 5</p><br>
+		<pre>
+			var num1 = parseFloat(prompt("Digite um numero"));
+			var num2 = parseFloat(prompt("Digite o segundo número"));
+			
+			var media = (num1+num2)/2;
+	
+			alert(media>5);
+		</pre>
+		<script type="text/javascript">
+
+			var num1 = parseFloat(prompt("Digite um numero"));
+			var num2 = parseFloat(prompt("Digite o segundo número"));
+			
+			var media = (num1+num2)/2;
+			/*SE(if) a média for maior que 5 mostrar a mensagem 1, SE NÃO(else) mostrar mensagem 2
+			if (media>5){
+				alert("A média entre " +num1+ " e " +num2+ " é maior que 5");
+						}
+			else{
+				alert("A média entre " +num1+ " e " +num2+ " é menor que 5");
+				}*/
+			alert(media>5);
+
+		</script>
+	</body>
+</html>
