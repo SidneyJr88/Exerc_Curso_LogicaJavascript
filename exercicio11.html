@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Logica de Programação Javascript</title>
+	</head>
+	<body>
+		<h1>Lógica de Programação Javascript: Exerc 11</h1>
+		<h3>Tratando erros com try catch()</h3>
+
+		<button onclick="mostrarAlert()">Alert</button>
+		<button onclick="mostrarDiv()">Página</button>
+
+		<div id="saida"></div>
+
+		<script type="text/javascript">
+
+			mostrarAlert();
+			
+			function mostrarAlert(){	
+
+				var lar = parseInt(prompt("Insira a largura"));
+				var alt = parseInt(prompt("Insira a altura"));
+
+				try{
+
+				var total = calcular(lar, alt);
+
+				}
+				catch(e){
+					alert(e);
+					return;
+				}
+
+				alert("A área total é de: " +total);
+
+			}
+
+			function mostrarDiv(){
+
+				var lar = parseInt(prompt("Insira a largura"));
+				var alt = parseInt(prompt("Insira a altura"));
+
+				try{
+
+				var total = calcular(lar, alt);
+				
+				}
+				catch(e){
+					alert(e);
+					return;
+				}
+
+				document.querySelector("#saida").innerHTML = "A área total é de: " +total;
+
+			}
+
+			function calcular(a, l){
+				
+				if(isNaN(a) || isNaN(l)){
+
+					throw new Error("Somente números");	
+				}
+
+				return a*l;
+			}
+
+		</script>
+	</body>
+</html>
