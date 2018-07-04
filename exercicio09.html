@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Logica de Programação Javascript</title>
+	</head>
+	<body>
+		<h1>Lógica de Programação Javascript: Exerc 09</h1>
+		<h3>Calculadora Básica usando Função e Switch</h3>
+
+		<button onclick="calcular('+')">+</button>
+		<button onclick="calcular('-')">-</button>
+		<button onclick="calcular('/')">/</button>
+		<button onclick="calcular('*')">*</button>
+
+		<div id="saida"></div>
+
+		<script type="text/javascript">
+			
+			var num = parseFloat(prompt("Insira um número"));
+
+			function mensagem(){
+				var saida = document.querySelector("#saida");
+				saida.innerHTML = num;
+				//alert(num);
+			}
+
+			mensagem();
+
+			function calcular(x){
+
+			var num2 = parseFloat(prompt("Insira um número"));
+
+			switch(x){
+
+				case '+':
+					num+=num2;
+				break;	
+				case '-':
+					num-=num2;
+				break;
+				case '/':
+					num/=num2;
+				break;
+				case '*':
+					num*=num2;
+				break;
+					}
+
+				mensagem();
+			}
+
+		</script>
+	</body>
+</html>
