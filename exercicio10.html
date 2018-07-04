@@ -1,0 +1,66 @@
+
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Logica de Programação Javascript</title>
+	</head>
+	<body>
+		<h1>Lógica de Programação Javascript: Exerc 10</h1>
+		<h3>Calculadora Básica usando Função e return</h3>
+
+		<button onclick="iniciarCalculo('+')">+</button>
+		<button onclick="iniciarCalculo('-')">-</button>
+		<button onclick="iniciarCalculo('/')">/</button>
+		<button onclick="iniciarCalculo('*')">*</button>
+
+		<div id="saida"></div>
+
+		<script type="text/javascript">
+		//Recebe o primeiro número digitado pelo úsuario
+			var num2 = parseFloat(prompt("Insira 1 número "));
+		//Mostra na tela o primeiro número digitado		
+			escreve(num2);
+
+			function iniciarCalculo(simbolo){
+				//Pega o primeiro numero digitado que esta sendo mostrado na div saida e guarda na var num.
+				var num = parseFloat(document.querySelector("#saida").textContent);
+				//Recebe o segundo numero digitado
+				var num2 = parseFloat(prompt("Insira um número"));
+				//Recebe o resultado do calculo
+				var msg = calcular(simbolo, num, num2);
+				//Mostra o resultado na tela
+				escreve(msg);
+
+			}
+
+			function escreve(mensagem){
+				var saida = document.querySelector("#saida");
+				saida.innerHTML = mensagem;
+				//alert(num);
+			}
+
+			function calcular(simbolo, num, num2){
+
+				var numeroCalculado = null;
+
+				switch(simbolo){
+
+					case '+':
+						numeroCalculado = num+num2;
+					break;	
+					case '-':
+						numeroCalculado = num-num2;
+					break;
+					case '/':
+						numeroCalculado = num/num2;
+					break;
+					case '*':
+						numeroCalculado = num*num2;
+						}
+
+				return numeroCalculado;
+			}
+
+		</script>
+	</body>
+</html>
