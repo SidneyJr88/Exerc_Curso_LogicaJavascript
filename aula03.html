@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Logica de Programação Javascript</title>
+	</head>
+	<body>
+		<h1>Lógica de Programação Javascript: Aula 3</h1>
+		<h3>Laço de Repetições: While</h3>
+
+		<ol>
+			<li>Usuário digita um número;</li>
+			<li>Mostrar a tabuada do número digitado até 100.</li>
+		</ol>
+		<script type="text/javascript">
+
+			var num = parseInt(prompt("Digite um numero"));
+			var mult = 1;
+
+			while(mult<=100){
+				document.write(+num+" x "+mult+ " = "+(mult*num)+ "<br>");
+				mult++;
+			}
+
+			document.write("Fim");
+
+		</script>
+	</body>
+</html>
