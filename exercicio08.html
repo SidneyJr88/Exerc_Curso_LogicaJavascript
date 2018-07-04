@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Logica de Programação Javascript</title>
+	</head>
+	<body>
+		<h1>Lógica de Programação Javascript: Exerc 08</h1>
+		<h3>Calculadora Básica usando Funções</h3>
+
+		<button onclick="soma()">+</button>
+		<button onclick="subtrair()">-</button>
+		<button onclick="dvd()">/</button>
+		<button onclick="mult()">*</button>
+
+		<div id="saida"></div>
+
+		<script type="text/javascript">
+			
+			var num = parseFloat(prompt("Insira um número"));
+
+			function mensagem(){
+				var saida = document.querySelector("#saida");
+				saida.innerHTML = num;
+				//alert(num);
+			}
+
+			mensagem();
+
+			function soma(){
+				var num2 = parseFloat(prompt("Insira um número"));
+				num += num2;
+
+				mensagem();
+			}
+
+			function subtrair(){
+				var num3 = parseFloat(prompt("Insira um número"));
+				num -= num3;
+
+				mensagem();
+			}
+
+			function dvd(){
+				var num4 = parseFloat(prompt("Insira um número"));
+				num /= num4;
+
+				mensagem();
+			}
+
+			function mult(){
+				var num5 = parseFloat(prompt("Insira um número"));
+				num *= num5;
+
+				mensagem();
+			}
+
+		</script>
+	</body>
+</html>
