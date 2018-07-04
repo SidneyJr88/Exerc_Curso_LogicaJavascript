@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Logica de Programação Javascript</title>
+	</head>
+	<body>
+		<h1>Lógica de Programação Javascript: Exercicio 11</h1>
+		<h3>Mostrar uma frase de boas vindas associada ao atual dia da semana utilizando um Array e objeto Date();</h3>
+
+		<script type="text/javascript">
+
+		var dias = new Array("Domingo", "Segunda", "Terça", "Quarta", "Quinta", "Sexta", "Sábado");
+		var data = new Date();
+		var diaSemana = data.getDay();
+			
+		alert("Bem vindo, hoje é " +dias[diaSemana]);
+
+		</script>
+	</body>
+</html>
